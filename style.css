@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+footer {
+  padding: 0;
+  background-color: #263238;
+  padding: 10px;
+}
+
+footer .container .footer-logo {
+  color: white;
+  font-size: 50px;
+  font-family: Radley;
+  font-style: italic;
+  font-weight: bold;
+  padding:0 20px;
+  line-height: 75px;
+}
+
+footer .container .text {
+  font-size: 12px;
+  padding:0 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+footer .container .text-cp {
+  font-size: 12px;
+  color: white;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.fa-copyright {
+  padding-right: 5px;
+}
