@@ -1,9 +1,256 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+*{
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
 }
+
+.container{
+  margin:0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: 'Quicksand';
+}
+
+/* header */
+
+header{
+  background-color: #3268a8;
+  color:white;
+  height: 80px;
+  width:100%;
+}
+
+.logo{
+  color: white;
+  font-size: 50px;
+  font-family: Radley;
+  font-style: italic;
+  font-weight: bold;
+  padding:0 20px;
+  line-height: 75px;
+}
+
+header ul{
+  float: right;
+  padding-right:20px;
+
+
+}
+
+header li{
+  display: inline-block;
+  line-height: 78px;
+  margin:0 10px;
+
+}
+
+header a{
+  color: white;
+}
+
+header a:hover{
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.check{
+  font-size: 30px;
+  line-height: 78px;
+  float: right;
+  cursor: pointer;
+  padding-right:20px;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 500px){
+
+  .check{
+    display: block;
+  }
+
+  header ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #3268a8;
+    top: 80px;
+    left: 200%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  header li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+}
+
+/* main */
+.main {
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main img {
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+    height: auto;
+}
+
+.main .slider {
+	position: relative;
+	display: flex;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 15s slider infinite;
+}
+
+.slide {
+	flex: auto;
+	width: 20%
+	background-size: cover, cover;
+}
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -300%;
+	}
+}
+
+.welcome-text {
+	margin-top: 10px!important;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 36px;
+}
+
+.team-name b{
+	font-family: "Segoe UI",Arial,sans-serif;
+	background-color: #3268a8;
+	opacity: 0.95;
+	box-sizing: border-box;
+	letter-spacing: 10px;
+	padding: 5px;
+}
+
+.ceb-ugm {
+  font-family: "Quicksand";
+}
+
+/* main2 */
+
+.icon {
+  font-size : 25px;
+  display : inline-block;
+  padding : 0 4px;
+  color : rgba(29, 60, 98, 0.5);
+}
+
+.icon:hover {
+  color : rgba(29, 60, 98, 0.8);
+}
+
+.lesson-wrapper {
+  height: 600px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.heading h2 {
+  font-weight: bold;
+  color: #234876;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson p {
+	margin: 0;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  font-size: 15px;
+  color: #234876;
+}
+
+.description {
+	margin-top : 12px;
+	margin-bottom : 8px;
+}
+
+.text-contents span{
+  font-weight : bold;
+}
+
+.frame {
+	width : 200px;
+	margin-bottom : 10px;
+}
+
+.item {
+	width : 40px;
+}
+
+/* footer */
 
 footer {
   padding: 0;
